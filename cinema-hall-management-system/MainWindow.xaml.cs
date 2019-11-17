@@ -35,7 +35,10 @@ namespace cinema_hall_management_system
 
         private void UserButton_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("user_button_clicker");
+            UserLogin user = new UserLogin();
+            user.Show();
+            Close();
+
         }
 
         private void EmployeeButton_Click_1(object sender, RoutedEventArgs e)

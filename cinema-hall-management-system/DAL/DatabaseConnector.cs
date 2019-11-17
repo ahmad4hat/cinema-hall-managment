@@ -68,5 +68,61 @@ namespace cinema_hall_management_system.DAL
             }
 
         }
+
+        public void addUser(Models.User user)
+        {
+            String query = "INSERT INTO `user` (`id`, `email`, `password`, `dateOfBirth`, `address`, `gender`, `name`) VALUES (NULL, '" + user.email + "', '" + user.password + "', '" + user.dateOfBirth + "', '" + user.address + "', '" + user.gender + "', '" + user.name + "')";
+            Console.WriteLine(query);
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+        public bool userLoginTest(String email, String password)
+        {
+
+
+            String query = "SELECT * FROM `user` WHERE email='" + email + "' and Password='" + password + "'";
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+                if (myReader.HasRows)
+                {
+                    Console.WriteLine("found");
+                    return true;
+
+                }
+                else
+                {
+                    Console.WriteLine("not found");
+                    return false;
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("not found");
+                return false;
+            }
+
+        }
     }
 }

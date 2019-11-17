@@ -23,3 +23,7 @@ C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema
 C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\cinema-hall-management-system.csproj.CopyComplete
 C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\EmployeeResgister.g.cs
 C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\EmployeeResgister.baml
+C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\UserLogin.g.cs
+C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\UserLogin.baml
+C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\UserResgister.g.cs
+C:\Users\ahmad\OneDrive\Desktop\cineam-demo\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\UserResgister.baml

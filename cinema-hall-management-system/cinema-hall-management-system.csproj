@@ -57,13 +57,21 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BL\Employee.cs" />
+    <Compile Include="BL\User.cs" />
     <Compile Include="DAL\DatabaseConnector.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="UI\EmployeeLogin.xaml.cs">
       <DependentUpon>EmployeeLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\EmployeeResgister.xaml.cs">
       <DependentUpon>EmployeeResgister.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserLogin.xaml.cs">
+      <DependentUpon>UserLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserResgister.xaml.cs">
+      <DependentUpon>UserResgister.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -82,6 +90,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\EmployeeResgister.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserResgister.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
