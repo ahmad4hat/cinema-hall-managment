@@ -33,6 +33,7 @@ namespace cinema_hall_management_system.UI
             if (dal.userLoginTest(emailTextBox.Text, b))
             {
                 MessageBox.Show("Login successful");
+                
             }
             else
             {
