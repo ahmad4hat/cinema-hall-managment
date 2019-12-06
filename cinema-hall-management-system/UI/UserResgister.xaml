@@ -20,12 +20,13 @@
         <TextBox x:Name="nameTextbox" HorizontalAlignment="Left" Height="34" Margin="295,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" TextChanged="NameTextbox_TextChanged"/>
        
         <TextBox x:Name="addressTextbox" HorizontalAlignment="Left" Height="34" Margin="295,369,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" TextChanged="AddressTextbox_TextChanged"/>
-        <DatePicker x:Name="datePickerDOB" SelectedDate="2000-12-31" SelectedDateFormat="Long" HorizontalAlignment="Left" Margin="296,259,0,0" VerticalAlignment="Top" Width="374" Height="31"/>
+        <DatePicker x:Name="datePickerDOB" SelectedDate="2000-12-31" SelectedDateFormat="Short" HorizontalAlignment="Left" Margin="296,259,0,0" VerticalAlignment="Top" Width="374" Height="31" DisplayDate="2019-12-02" IsTodayHighlighted="False" IsDropDownOpen="True"/>
         <ComboBox x:Name="genderSelector" HorizontalAlignment="Left" Margin="295,307,0,0" VerticalAlignment="Top" Width="375" Height="34" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem  IsSelected="True">Male</ComboBoxItem>
             <ComboBoxItem>Female</ComboBoxItem>
         </ComboBox>
         <Button x:Name="registerButton" Content="Register" HorizontalAlignment="Left" Margin="509,478,0,0" VerticalAlignment="Top" Width="161" Height="63" Click="RegisterButton_Click"/>
+        <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
 
     </Grid>

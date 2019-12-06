@@ -60,7 +60,11 @@
     <Compile Include="BL\User.cs" />
     <Compile Include="DAL\DatabaseConnector.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Movie.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="UI\EmployeeHome.xaml.cs">
+      <DependentUpon>EmployeeHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\EmployeeLogin.xaml.cs">
       <DependentUpon>EmployeeLogin.xaml</DependentUpon>
     </Compile>
@@ -85,6 +89,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UI\EmployeeHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\EmployeeLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

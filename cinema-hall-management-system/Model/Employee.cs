@@ -8,7 +8,7 @@ namespace cinema_hall_management_system.Model
 {
     class Employee
     {
-        public String id { get; set; }
+        public int id { get; set; }
         public String email { get; set; }
         public String name { get; set; }
 
@@ -23,6 +23,19 @@ namespace cinema_hall_management_system.Model
 
         public Employee(String email,String password,String name,String address, String dateOfBirth,String gender,String role) {
             this.dateOfBirth = dateOfBirth;
+            this.name = name;
+            this.role = role;
+            this.email = email;
+            this.gender = gender;
+            this.password = password;
+            this.address = address;
+        }
+
+        public Employee(int id,String email, String password, String name, String address, String dateOfBirth, String gender, String role)
+        {
+            this.id = id;
+            DateTime dt = new DateTime(2019, 12, 2);
+            this.dateOfBirth = dt.ToString();
             this.name = name;
             this.role = role;
             this.email = email;

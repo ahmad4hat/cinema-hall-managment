@@ -55,7 +55,8 @@ namespace cinema_hall_management_system.UI
             String email = emailTextbox.Text;
             String address = addressTextbox.Text;
             String password = passwordBox.Password.ToString();
-            String dateOfBirth = datePickerDOB.SelectedDate.ToString();
+            datePickerDOB.DisplayDate = DateTime.Now;
+            String dateOfBirth = datePickerDOB.Text;
             String gender = genderSelector.Text;
             String name = nameTextbox.Text;
       

@@ -16,6 +16,8 @@ namespace cinema_hall_management_system.BL
 
         {
             Console.WriteLine(email);
+            DateTime dt= DateTime.Now;
+            dateOfBirth = dt.ToString();
             if (email=="")
             {
                 throw new Exception("email is empty");
@@ -32,10 +34,11 @@ namespace cinema_hall_management_system.BL
             {
                 throw new Exception("address is empty");
             }
-            if (dateOfBirth == "")
+            /*if (dateOfBirth == "")
             {
                 throw new Exception("dateOfBirth is empty");
-            }
+                
+            }*/
             if (gender == "")
             {
                 throw new Exception("gender is empty");

@@ -33,7 +33,9 @@ namespace cinema_hall_management_system.UI
             DatabaseConnector dal = new DatabaseConnector();
             if (dal.empLoginTest(emailTextBox.Text, b))
             {
-                MessageBox.Show("Login successful");
+                EmployeeHome empHome = new EmployeeHome();
+                empHome.Show();
+                this.Close();
             }
             else
             {
@@ -50,6 +52,9 @@ namespace cinema_hall_management_system.UI
         {
             EmployeeResgister empRes = new EmployeeResgister();
             empRes.Show();
+            this.Hide();
+            
+            
         }
     }
 }
