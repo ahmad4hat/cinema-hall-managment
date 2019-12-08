@@ -57,6 +57,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BL\Employee.cs" />
+    <Compile Include="BL\Movie.cs" />
     <Compile Include="BL\User.cs" />
     <Compile Include="DAL\DatabaseConnector.cs" />
     <Compile Include="Model\CinemaHall.cs" />
@@ -71,6 +72,9 @@
     </Compile>
     <Compile Include="UI\EmployeeResgister.xaml.cs">
       <DependentUpon>EmployeeResgister.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movies.xaml.cs">
+      <DependentUpon>Movies.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\UserLogin.xaml.cs">
       <DependentUpon>UserLogin.xaml</DependentUpon>
@@ -99,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\EmployeeResgister.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Movies.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

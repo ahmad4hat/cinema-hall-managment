@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using cinema_hall_management_system.DAL;
+using System.Collections.Generic;
+using cinema_hall_management_system.Model;
 
 
 namespace cinema_hall_management_system.UI
@@ -24,6 +26,7 @@ namespace cinema_hall_management_system.UI
         public EmployeeLogin()
         {
             InitializeComponent();
+          
         }
 
         private void LoginButtonClicked_Click(object sender, RoutedEventArgs e)
@@ -41,7 +44,6 @@ namespace cinema_hall_management_system.UI
             {
                 MessageBox.Show("email or password is not correct");
             };
-         
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -52,7 +54,6 @@ namespace cinema_hall_management_system.UI
         {
             EmployeeResgister empRes = new EmployeeResgister();
             empRes.Show();
-            this.Hide();
             
             
         }

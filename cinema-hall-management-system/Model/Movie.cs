@@ -15,9 +15,10 @@ namespace cinema_hall_management_system.Model
         public String duration { get; set; }
         public String genre { get; set; }
         public String director { get; set; }
+        public String rating { get; set; }
 
         public Movie() { }
-        public Movie(int id, String title, String releaseDate, String description, String duration, String genre, String director)
+        public Movie(int id, String title, String releaseDate, String description, String duration, String genre, String director,String rating)
         {
             this.id = id;
             this.description = description;
@@ -26,10 +27,11 @@ namespace cinema_hall_management_system.Model
             this.title = title;
             this.director = director;
             this.releaseDate = releaseDate;
+            this.rating = rating;
 
         }
 
-        public Movie(String title, String releaseDate, String description, String duration, String genre, String director)
+        public Movie(String title, String releaseDate, String description, String duration, String genre, String director,String rating)
         {
             this.description = description;
             this.duration = duration;
@@ -37,7 +39,12 @@ namespace cinema_hall_management_system.Model
             this.title = title;
             this.director = director;
             this.releaseDate = releaseDate;
+            this.rating = rating;
+        }
 
+        public void showMovie()
+        {
+            Console.WriteLine("id ="+ this.id +", title="+ this.title +", releaseDate ="+this.releaseDate +", description="+ this.description + ",  duration=" + this.duration + ", genre=" + this.genre + ", director=" + this.director + ", rateing=" + this.rating);
         }
     }
 }

@@ -23,8 +23,6 @@ namespace cinema_hall_management_system.UI
         public EmployeeResgister()
         {
             InitializeComponent();
-            DateTime dt = DateTime.Now;
-            datePickerDOB.Text=dt.ToString();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -32,7 +30,7 @@ namespace cinema_hall_management_system.UI
 
         }
 
-       
+
 
         private void EmailTextbox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -56,11 +54,10 @@ namespace cinema_hall_management_system.UI
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-
-            String email= emailTextbox.Text;
+            String email = emailTextbox.Text;
             String address = addressTextbox.Text;
             String password = passwordBox.Password.ToString();
-            String dateOfBirth=datePickerDOB.Text;
+            String dateOfBirth = datePickerDOB.SelectedDate.ToString();
             String gender = genderSelector.Text;
             String name = nameTextbox.Text;
             String role = roleTextbox.Text;
@@ -68,11 +65,11 @@ namespace cinema_hall_management_system.UI
             BL.Employee emp = new BL.Employee();
             try
             {
-                
-                emp.employeeAdd(email,password,name,address,dateOfBirth,gender,role);
-                MessageBox.Show("created success");
+
+                emp.employeeAdd(email, password, name, address, dateOfBirth, gender, role);
+                MessageBox.Show("created sucess");
             }
-            catch(Exception excp)
+            catch (Exception excp)
             {
                 MessageBox.Show(excp.Message);
             }

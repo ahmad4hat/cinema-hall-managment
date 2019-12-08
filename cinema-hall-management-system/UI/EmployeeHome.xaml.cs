@@ -26,7 +26,8 @@ namespace cinema_hall_management_system.UI
 
         private void moviesButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("movies button clicked");
+            Movies movies = new Movies();
+            movies.Show();
             
 
 
