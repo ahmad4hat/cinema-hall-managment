@@ -38,7 +38,14 @@ namespace cinema_hall_management_system.UI
 
         private void BtnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            
+            Movie movie = new Movie();
+            movieList.ItemsSource = movie.getMovies();
+        }
+
+        private void btnAddMovie_Click(object sender, RoutedEventArgs e)
+        {
+            AddMovie addMovie = new AddMovie();
+            addMovie.Show();
         }
 
        

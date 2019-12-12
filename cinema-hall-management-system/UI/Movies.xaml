@@ -24,6 +24,7 @@
             </ListView>
         </ListBox>
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="1414,77,0,0" VerticalAlignment="Top" Width="185" Height="104" FontSize="48" Click="BtnUpdate_Click"/>
+        <Button x:Name="btnAddMovie" Content="Add movie" HorizontalAlignment="Left" Margin="120,86,0,0" VerticalAlignment="Top" Width="255" Height="86" FontSize="36" FontWeight="Bold" Click="btnAddMovie_Click"/>
 
     </Grid>
 </Window>

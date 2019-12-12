@@ -27,6 +27,18 @@ namespace cinema_hall_management_system.BL
             
            
         }
+        public void addMovie(String title, String releaseDate, String description, String duration, String genre, String director, String rating)
+        {
+            Models.Movie movie = new Models.Movie(title, releaseDate, description, duration, genre, director, rating);
+            try
+            {
+                dbC.addMovie(movie);
+            }
+            catch (Exception err) {
+
+                throw err;
+            }
+        }
 
     }
 }

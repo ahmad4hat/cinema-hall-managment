@@ -168,6 +168,26 @@ namespace cinema_hall_management_system.DAL
             
 
         }
+
+        public void addMovie(Models.Movie movie) {
+
+            String query = "INSERT INTO `movie` (`id`, `title`, `releaseDate`, `description`, `duration`, `genre`, `director`, `rating`) VALUES (NULL, '" + movie.title + "', '" + movie.releaseDate + "', '" + movie.description + "', '" + movie.duration+ "', '"+movie.genre+"', '"+movie.director+"', '"+movie.rating+"')";
+            Console.WriteLine(query);
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
     }
 
     
