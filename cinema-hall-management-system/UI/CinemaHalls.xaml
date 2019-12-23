@@ -1,0 +1,27 @@
+﻿<Window x:Class="cinema_hall_management_system.UI.CinemaHalls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cinema_hall_management_system.UI"
+        mc:Ignorable="d"
+        Title="CinemaHalls" Height="1000" Width="1800">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Height="689" Margin="74,231,0,0" VerticalAlignment="Top" Width="1613">
+            <ListView Name="cinemaHallList" Height="679" Width="1603" FontSize="24" >
+                <ListView.View >
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding id}" Width="80px" />
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding name}" Width="250px"/>
+                        <GridViewColumn Header="Capacity" DisplayMemberBinding="{Binding capacity}" Width="200px"/>
+                        <GridViewColumn Header="Location" DisplayMemberBinding="{Binding location}" Width="350px"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ListBox>
+        <Button x:Name="btnUpdate" Content="Refresh" HorizontalAlignment="Left" Margin="1414,77,0,0" VerticalAlignment="Top" Width="185" Height="104" FontSize="48" Click="BtnRefresh_Click" FontWeight="Bold"/>
+        <Button x:Name="btnAddCinema" Content="Add Cinemahall" HorizontalAlignment="Left" Margin="120,86,0,0" VerticalAlignment="Top" Width="255" Height="86" FontSize="36" FontWeight="Bold" Click="btnAddMovie_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="1134,77,0,0" VerticalAlignment="Top" Width="219" Height="104" FontSize="48" FontWeight="Bold" Click="BtnDelete_Click"/>
+        <Button x:Name="btnUpdated" Content="Update" HorizontalAlignment="Left" Margin="854,77,0,0" VerticalAlignment="Top" Width="243" Height="104" FontSize="48" FontWeight="Bold" Click="BtnUpdated_Click"/>
+    </Grid>
+</Window>

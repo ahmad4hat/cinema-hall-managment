@@ -32,5 +32,10 @@ namespace cinema_hall_management_system.Model
             this.location = location;
         }
 
+
+        public void showCinemaHall()
+        {
+            Console.WriteLine(id + name + capacity + location);
+        }
     }
 }

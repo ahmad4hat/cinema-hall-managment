@@ -35,7 +35,8 @@ namespace cinema_hall_management_system.UI
 
         private void cinemaHallButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("cinema hall clicked");
+            CinemaHalls ch = new CinemaHalls();
+            ch.Show();
 
         }
 

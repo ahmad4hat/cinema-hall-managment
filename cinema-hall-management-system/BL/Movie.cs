@@ -25,7 +25,6 @@ namespace cinema_hall_management_system.BL
                 throw e;
             }
             
-           
         }
         public void addMovie(String title, String releaseDate, String description, String duration, String genre, String director, String rating)
         {

@@ -265,7 +265,60 @@ namespace cinema_hall_management_system.DAL
             }
         }
 
+
+
+        //cinema hall
+        public List<Models.CinemaHall> getCinemaHall()
+        {
+            List<Models.CinemaHall> cinemaHalls = new List<Models.CinemaHall>();
+
+            String query = "SELECT * FROM cinema_hall";
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+                if (myReader.HasRows)
+                {
+                    while (myReader.Read())
+                    {
+                        Models.CinemaHall cinemaHall = new Models.CinemaHall(int.Parse(myReader[0].ToString()), myReader[1].ToString(), int.Parse(myReader[2].ToString()), myReader[3].ToString());
+
+                        // cinemaHall.showCinemaHall();
+                        cinemaHalls.Add(cinemaHall);
+                    }
+
+                    return cinemaHalls;
+                }
+                else
+                {
+                    return cinemaHalls;
+
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+
+
+
+
+        }
+
     }
+
+
+
+    
+
+
 
     
 }

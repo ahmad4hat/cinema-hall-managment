@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BL\CinemaHall.cs" />
     <Compile Include="BL\Employee.cs" />
     <Compile Include="BL\Movie.cs" />
     <Compile Include="BL\User.cs" />
@@ -66,6 +67,9 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="UI\AddMovie.xaml.cs">
       <DependentUpon>AddMovie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CinemaHalls.xaml.cs">
+      <DependentUpon>CinemaHalls.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\EmployeeHome.xaml.cs">
       <DependentUpon>EmployeeHome.xaml</DependentUpon>
@@ -107,6 +111,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UI\AddMovie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CinemaHalls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
