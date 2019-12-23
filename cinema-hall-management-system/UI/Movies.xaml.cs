@@ -28,7 +28,6 @@ namespace cinema_hall_management_system.UI
             {
                 Movie movie = new Movie();
                 movieList.ItemsSource = movie.getMovies();
-                movie.removeMovie("3");
             }
             catch(Exception e)
             {
@@ -53,6 +52,12 @@ namespace cinema_hall_management_system.UI
         {
             RemoveMovie rm = new RemoveMovie();
             rm.Show();
+        }
+
+        private void BtnUpdated_Click(object sender, RoutedEventArgs e)
+        {
+            MovieFindbyIdAndUpdate fn = new MovieFindbyIdAndUpdate();
+            fn.Show();
         }
     }
 }

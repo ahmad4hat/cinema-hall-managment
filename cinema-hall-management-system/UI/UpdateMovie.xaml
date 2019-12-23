@@ -1,12 +1,13 @@
-﻿<Window x:Class="cinema_hall_management_system.UI.AddMovie"
+﻿<Window x:Class="cinema_hall_management_system.UI.UpdateMovie"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Add Movie" Height="750" Width="800">
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cinema_hall_management_system.UI"
+        mc:Ignorable="d"
+        Title="UpdateMovie"  Height="750" Width="682.294">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        
         <TextBox x:Name="txtTitle" HorizontalAlignment="Left"  Margin="223,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="375" Grid.Column="1" TextChanged="txtTitle_TextChanged"/>
         <DatePicker x:Name="dtRelaseDate" HorizontalAlignment="Left" Margin="223,145,0,0" VerticalAlignment="Top" Height="34" Width="375" Grid.Column="1"/>
         <TextBox x:Name="txtDescription" HorizontalAlignment="Left"  Margin="223,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="375" Grid.Column="1" TextChanged="txtDescription_TextChanged"/>
@@ -24,10 +25,10 @@
         <Label Content="Genre" HorizontalAlignment="Left" Margin="31,310,0,0" VerticalAlignment="Top" Height="34" Width="146" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
         <Label Content="Director" HorizontalAlignment="Left" Margin="31,365,0,0" VerticalAlignment="Top" Height="34" Width="146" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
         <Label Content="Rating" HorizontalAlignment="Left" Margin="31,420,0,0" VerticalAlignment="Top" Height="45" Width="146" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
-        
-        
-        
-        <Button x:Name="btnAddMovie" Grid.ColumnSpan="2" Content="Add Movies" HorizontalAlignment="Left" Margin="428,577,0,0" VerticalAlignment="Top" Width="170" Height="67"  FontSize="24" FontWeight="Bold" Click="btnAddMovie_Click"/>
+
+
+
+        <Button x:Name="btnUpdatMovie" Grid.ColumnSpan="2" Content="Update" HorizontalAlignment="Left" Margin="428,577,0,0" VerticalAlignment="Top" Width="170" Height="67"  FontSize="24" FontWeight="Bold" Click="btnUpdateMovie_Click"/>
 
 
     </Grid>

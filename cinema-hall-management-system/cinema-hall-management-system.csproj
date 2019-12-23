@@ -76,11 +76,17 @@
     <Compile Include="UI\EmployeeResgister.xaml.cs">
       <DependentUpon>EmployeeResgister.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\MovieFindbyIdAndUpdate.xaml.cs">
+      <DependentUpon>MovieFindbyIdAndUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Movies.xaml.cs">
       <DependentUpon>Movies.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\RemoveMovie.xaml.cs">
       <DependentUpon>RemoveMovie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UpdateMovie.xaml.cs">
+      <DependentUpon>UpdateMovie.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\UserLogin.xaml.cs">
       <DependentUpon>UserLogin.xaml</DependentUpon>
@@ -116,11 +122,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UI\MovieFindbyIdAndUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\Movies.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\RemoveMovie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UpdateMovie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

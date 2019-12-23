@@ -169,3 +169,7 @@ C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-syst
 C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\AddMovie.g.cs
 C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\RemoveMovie.g.cs
 C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\RemoveMovie.baml
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\MovieFindbyIdAndUpdate.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\MovieFindbyIdAndUpdate.baml
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\UpdateMovie.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\UpdateMovie.baml

@@ -11,38 +11,40 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using BL= cinema_hall_management_system.BL ;
+using BL = cinema_hall_management_system.BL;
 
 namespace cinema_hall_management_system.UI
 {
     /// <summary>
-    /// Interaction logic for RemoveMovie.xaml
+    /// Interaction logic for MovieFindbyIdAndUpdate.xaml
     /// </summary>
-    public partial class RemoveMovie : Window
+    public partial class MovieFindbyIdAndUpdate : Window
     {
-        public RemoveMovie()
+        public MovieFindbyIdAndUpdate()
         {
             InitializeComponent();
+        }
+
+        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                BL.Movie movieLogic = new BL.Movie();
+                Model.Movie movie = movieLogic.findMovie(txtId.Text);
+                UpdateMovie um = new UpdateMovie(txtId.Text);
+                um.Show();
+                this.Close();
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
         }
 
         private void TxtId_TextChanged(object sender, TextChangedEventArgs e)
         {
 
-        }
-
-        private void BtnDelete_Click(object sender, RoutedEventArgs e)
-        {
-            BL.Movie movie = new BL.Movie();
-            try
-            {
-                movie.removeMovie(txtId.Text);
-                MessageBox.Show("succesfully deleted that movie ");
-            }
-            catch(Exception err)
-            {
-                MessageBox.Show(err.Message);
-            }
-            
         }
     }
 }

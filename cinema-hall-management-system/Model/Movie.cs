@@ -42,9 +42,10 @@ namespace cinema_hall_management_system.Model
             this.rating = rating;
         }
 
-        public void showMovie()
+        public String showMovie()
         {
             Console.WriteLine("id ="+ this.id +", title="+ this.title +", releaseDate ="+this.releaseDate +", description="+ this.description + ",  duration=" + this.duration + ", genre=" + this.genre + ", director=" + this.director + ", rateing=" + this.rating);
+            return "id =" + this.id + ", title=" + this.title + ", releaseDate =" + this.releaseDate + ", description=" + this.description + ",  duration=" + this.duration + ", genre=" + this.genre + ", director=" + this.director + ", rateing=" + this.rating;
         }
     }
 }
