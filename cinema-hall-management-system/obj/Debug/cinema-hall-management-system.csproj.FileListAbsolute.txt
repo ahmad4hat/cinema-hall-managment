@@ -167,3 +167,5 @@ C:\Users\ASUS\Desktop\c# project\cinema-hall-managment-master\cinema-hall-manage
 C:\Users\ASUS\Desktop\c# project\cinema-hall-managment-master\cinema-hall-management-system\obj\Debug\UI\AddMovie.g.cs
 C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\AddMovie.baml
 C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\AddMovie.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\RemoveMovie.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\UI\RemoveMovie.baml

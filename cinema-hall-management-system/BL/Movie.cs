@@ -29,6 +29,16 @@ namespace cinema_hall_management_system.BL
         }
         public void addMovie(String title, String releaseDate, String description, String duration, String genre, String director, String rating)
         {
+            if (title == "") { throw new Exception("title can't be empty "); }
+            if (releaseDate == "") { throw new Exception("releaseDate can't be empty "); }
+            if (description == "") { throw new Exception("description can't be empty "); }
+            if (duration == "") { throw new Exception("duration can't be empty "); }
+            if (genre == "") { throw new Exception("genre can't be empty "); }
+            if (director == "") { throw new Exception("director can't be empty "); }
+            if (rating == "") { throw new Exception("rating can't be empty "); }
+
+
+
             Models.Movie movie = new Models.Movie(title, releaseDate, description, duration, genre, director, rating);
             try
             {
@@ -36,6 +46,20 @@ namespace cinema_hall_management_system.BL
             }
             catch (Exception err) {
 
+                throw err;
+            }
+        }
+
+        public void removeMovie(String id){
+             if (id == "") { throw new Exception("id can't be empty "); }
+
+
+            try
+            {
+                dbC.removeMovie(Int32.Parse(id));
+            }
+            catch(Exception err)
+            {
                 throw err;
             }
         }

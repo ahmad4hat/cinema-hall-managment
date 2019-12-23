@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ASUS\Desktop\c# project\cinema-hall-managment-master\cinema-hall-management-system\obj\Debug\
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\obj\Debug\
 cinema_hall_management_system
 none
 false
 DEBUG;TRACE
-C:\Users\ASUS\Desktop\c# project\cinema-hall-managment-master\cinema-hall-management-system\App.xaml
-8-972596059
+C:\Users\ahmad\Desktop\cinema-hall-management-system\cinema-hall-management-system\App.xaml
+9-2003338719
 
-24-1582631870
+221830298324
 141586096460
-MainWindow.xaml;UI\AddMovie.xaml;UI\EmployeeHome.xaml;UI\EmployeeLogin.xaml;UI\EmployeeResgister.xaml;UI\Movies.xaml;UI\UserLogin.xaml;UI\UserResgister.xaml;
+MainWindow.xaml;UI\AddMovie.xaml;UI\EmployeeHome.xaml;UI\EmployeeLogin.xaml;UI\EmployeeResgister.xaml;UI\Movies.xaml;UI\RemoveMovie.xaml;UI\UserLogin.xaml;UI\UserResgister.xaml;
 
-False
+True
 

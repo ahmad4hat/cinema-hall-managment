@@ -28,6 +28,7 @@ namespace cinema_hall_management_system.UI
             {
                 Movie movie = new Movie();
                 movieList.ItemsSource = movie.getMovies();
+                movie.removeMovie("3");
             }
             catch(Exception e)
             {
@@ -36,7 +37,7 @@ namespace cinema_hall_management_system.UI
             
         }
 
-        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
+        private void BtnRefresh_Click(object sender, RoutedEventArgs e)
         {
             Movie movie = new Movie();
             movieList.ItemsSource = movie.getMovies();
@@ -48,6 +49,10 @@ namespace cinema_hall_management_system.UI
             addMovie.Show();
         }
 
-       
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            RemoveMovie rm = new RemoveMovie();
+            rm.Show();
+        }
     }
 }
