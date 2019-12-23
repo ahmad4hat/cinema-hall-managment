@@ -26,5 +26,27 @@ namespace cinema_hall_management_system.UI
             InitializeComponent();
             cinemaHallList.ItemsSource = Logic.getCinemaHalls();
         }
+
+
+
+        private void BtnAddCinema_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnUpdated_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
