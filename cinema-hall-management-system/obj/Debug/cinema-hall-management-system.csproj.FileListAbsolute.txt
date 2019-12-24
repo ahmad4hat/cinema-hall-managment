@@ -190,3 +190,5 @@ C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\D
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\CinemaHalls.baml
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\AddCinemaHall.g.cs
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\AddCinemaHall.baml
+C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\RemoveCinemahall.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\RemoveCinemahall.baml

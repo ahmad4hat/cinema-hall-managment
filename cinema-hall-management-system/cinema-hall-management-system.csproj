@@ -89,6 +89,9 @@
     <Compile Include="UI\Movies.xaml.cs">
       <DependentUpon>Movies.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\RemoveCinemahall.xaml.cs">
+      <DependentUpon>RemoveCinemahall.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\RemoveMovie.xaml.cs">
       <DependentUpon>RemoveMovie.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Movies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\RemoveCinemahall.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

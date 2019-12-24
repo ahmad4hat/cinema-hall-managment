@@ -333,6 +333,66 @@ namespace cinema_hall_management_system.DAL
             }
         }
 
+        public Models.CinemaHall findCinemaHall(int id)
+        {
+            String query = "SELECT * FROM `cinema_hall` WHERE id = " + id;
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+                if (myReader.HasRows)
+                {
+                    if (myReader.Read())
+                    {
+                        Console.WriteLine("found");
+
+                        Models.CinemaHall cinemaHall = new Models.CinemaHall(int.Parse(myReader[0].ToString()), myReader[1].ToString(),int.Parse(myReader[2].ToString()), myReader[3].ToString());
+
+                        cinemaHall.showCinemaHall();
+                        return cinemaHall;
+                    }
+
+                    throw new Exception("Reader can't read");
+
+
+                }
+                else
+                {
+                    throw new Exception("CinemaHall not found ");
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+
+        public void removeCinemahall(int id)
+        {
+            String query = "DELETE FROM `cinema_hall` WHERE `cinema_hall`.`id` = " + id + ";";
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+
     }
 
 

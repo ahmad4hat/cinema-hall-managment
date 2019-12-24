@@ -51,6 +51,49 @@ namespace cinema_hall_management_system.BL
                 throw err;
             }
         }
+
+
+        public Models.CinemaHall findCinemaHall(String id)
+        {
+            if (id == "") { throw new Exception("id can't be empty "); }
+
+            int idInt;
+            if (!int.TryParse(id, out idInt))
+            {
+                throw new Exception("ID must be a number");
+            }
+
+            try
+            {
+                return dbC.findCinemaHall(idInt);
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+        }
+
+        public void removeCinemaHall (String id)
+        {
+            if (id == "") { throw new Exception("id can't be empty "); }
+
+            int idInt;
+            if (!int.TryParse(id, out idInt))
+            {
+                throw new Exception("ID must be a number");
+            }
+
+
+
+            try
+            {
+                dbC.removeCinemahall(idInt);
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+        }
     }
 
 

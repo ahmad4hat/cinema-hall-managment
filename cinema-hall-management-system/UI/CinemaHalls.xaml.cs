@@ -44,6 +44,8 @@ namespace cinema_hall_management_system.UI
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
+            RemoveCinemahall rm = new RemoveCinemahall();
+            rm.Show();
 
         }
 
