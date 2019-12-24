@@ -268,6 +268,9 @@ namespace cinema_hall_management_system.DAL
 
 
         //cinema hall
+        //cinema hall
+        //cinema hall
+        //cinema hall
         public List<Models.CinemaHall> getCinemaHall()
         {
             List<Models.CinemaHall> cinemaHalls = new List<Models.CinemaHall>();
@@ -307,9 +310,27 @@ namespace cinema_hall_management_system.DAL
 
             }
 
+        }
 
 
+        public  void addCinemaHall(Models.CinemaHall cinemaHall)
+        {
 
+            String query = "INSERT INTO `cinema_hall` (`id`, `name`, `capacity`, `location`) VALUES (NULL, '"+cinemaHall.name+"', '"+cinemaHall.capacity+"', '"+cinemaHall.capacity+"')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
     }

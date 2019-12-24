@@ -188,3 +188,5 @@ C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\D
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\cinema-hall-management-system.csproj.CoreCompileInputs.cache
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\CinemaHalls.g.cs
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\CinemaHalls.baml
+C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\AddCinemaHall.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\AddCinemaHall.baml

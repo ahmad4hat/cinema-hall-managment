@@ -65,6 +65,9 @@
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Movie.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="UI\AddCinemaHall.xaml.cs">
+      <DependentUpon>AddCinemaHall.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\AddMovie.xaml.cs">
       <DependentUpon>AddMovie.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UI\AddCinemaHall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\AddMovie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -24,7 +24,34 @@ namespace cinema_hall_management_system.BL
                 throw e;
             }
 
+        }
 
+        public void addCinemaHall(String name, String capacity, String location)
+        {
+            if (name == "") { throw new Exception("name can't be empty "); }
+            if (capacity == "") { throw new Exception("capacity can't be empty "); }
+            if (location == "") { throw new Exception("location can't be empty "); }
+
+            int cap;
+            if(!int.TryParse( capacity  ,out cap))
+            {
+                 throw new Exception("capacity must be a number"); 
+            }
+
+
+
+            Models.CinemaHall cinemaHall = new Models.CinemaHall(name,cap,location);
+            try
+            {
+                dbC.addCinemaHall(cinemaHall);
+            }
+            catch (Exception err)
+            {
+
+                throw err;
+            }
         }
     }
+
+
 }

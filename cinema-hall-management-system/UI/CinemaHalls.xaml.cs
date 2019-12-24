@@ -31,11 +31,14 @@ namespace cinema_hall_management_system.UI
 
         private void BtnAddCinema_Click(object sender, RoutedEventArgs e)
         {
+            AddCinemaHall ad = new AddCinemaHall();
+            ad.Show();
 
         }
 
         private void BtnUpdated_Click(object sender, RoutedEventArgs e)
         {
+
 
         }
 
@@ -46,7 +49,7 @@ namespace cinema_hall_management_system.UI
 
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)
         {
-
+            cinemaHallList.ItemsSource = Logic.getCinemaHalls();
         }
     }
 }
