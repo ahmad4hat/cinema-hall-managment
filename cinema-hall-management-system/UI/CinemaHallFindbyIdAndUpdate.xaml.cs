@@ -23,5 +23,24 @@ namespace cinema_hall_management_system.UI
         {
             InitializeComponent();
         }
+
+        private void TxtId_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void BtnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                new BL.CinemaHall().findCinemaHall(txtId.Text);
+                new UpdateCinemaHall(txtId.Text).Show();
+                this.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
     }
 }

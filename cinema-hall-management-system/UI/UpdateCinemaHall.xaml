@@ -1,4 +1,4 @@
-﻿<Window x:Class="cinema_hall_management_system.UI.AddCinemaHall"
+﻿<Window x:Class="cinema_hall_management_system.UI.UpdateCinemaHall"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -24,7 +24,7 @@
 
 
 
-        <Button x:Name="btnAddCinemaHall" Content="Add Cinema Hall" HorizontalAlignment="Left" Margin="388,314,0,0" VerticalAlignment="Top" Width="210" Height="67"  FontSize="24" FontWeight="Bold" Click="BtnAddCinemaHall_Click"/>
+        <Button x:Name="btnUpdate" Content="Update Cinemahall" HorizontalAlignment="Left" Margin="362,314,0,0" VerticalAlignment="Top" Width="236" Height="67"  FontSize="24" FontWeight="Bold" Click="BtnUpdate_Click" />
 
 
     </Grid>

@@ -94,7 +94,19 @@ namespace cinema_hall_management_system.BL
                 throw err;
             }
         }
-    }
 
+        public void updateCinemaHall(int id, String name, int capacity, String location){
+            if (name == "") { throw new Exception("name can't be empty "); }
+            if (capacity.ToString() == "") { throw new Exception("capacity can't be empty "); }
+            if (location == "") { throw new Exception("location can't be empty "); }
 
+            dbC.updateCinemaHall(new Model.CinemaHall(id, name, capacity, location));
+        }
+            
+           
+
+        }
 }
+
+
+

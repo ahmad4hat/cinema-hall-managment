@@ -71,6 +71,9 @@
     <Compile Include="UI\AddMovie.xaml.cs">
       <DependentUpon>AddMovie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\CinemaHallFindbyIdAndUpdate.xaml.cs">
+      <DependentUpon>CinemaHallFindbyIdAndUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\CinemaHalls.xaml.cs">
       <DependentUpon>CinemaHalls.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,9 @@
     </Compile>
     <Compile Include="UI\RemoveMovie.xaml.cs">
       <DependentUpon>RemoveMovie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UpdateCinemaHall.xaml.cs">
+      <DependentUpon>UpdateCinemaHall.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\UpdateMovie.xaml.cs">
       <DependentUpon>UpdateMovie.xaml</DependentUpon>
@@ -121,6 +127,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\AddMovie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CinemaHallFindbyIdAndUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\RemoveMovie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UpdateCinemaHall.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

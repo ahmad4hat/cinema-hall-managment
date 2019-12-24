@@ -393,6 +393,24 @@ namespace cinema_hall_management_system.DAL
 
         }
 
+        public void updateCinemaHall(Models.CinemaHall cinemaHall)
+        {
+            String query = "UPDATE `cinema_hall` SET `name` = '"+cinemaHall.name+"', `capacity` = '"+cinemaHall.capacity+" ', `location` = '"+cinemaHall.location+"' WHERE `cinema_hall`.`id` = "+cinemaHall.id+"";
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
     }
 
 
