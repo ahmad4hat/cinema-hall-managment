@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cinema_hall_management_system.UI"
         mc:Ignorable="d"
-        Title="AddMovieShow" Height="450" Width="800">
+     Title="AddCinemaHall"  Height="467.984" Width="669.21">
     <Grid>
-        
+
+        <TextBox x:Name="txtMovieID" HorizontalAlignment="Left"  Margin="223,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="375" Grid.Column="1" TextChanged="TxtMovieID_TextChanged" />
+
+        <TextBox x:Name="txtCinemHallId" HorizontalAlignment="Left"  Margin="223,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="34" Width="375" TextChanged="TxtCinemHallId_TextChanged" />
+
+
+
+        <Label Content="Movie ID" HorizontalAlignment="Left" Margin="31,90,0,0" VerticalAlignment="Top" Height="34" Width="100" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
+
+        <Label Content="CinemaHall ID" HorizontalAlignment="Left" Margin="31,148,0,0" VerticalAlignment="Top" Height="34" Width="146" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Time" HorizontalAlignment="Left" Margin="31,216,0,0" VerticalAlignment="Top" Height="34" Width="146" FontSize="20" FontWeight="Bold"/>
+
+
+
+
+        <Button x:Name="btnMovieShow" Content="Add Movie Show" HorizontalAlignment="Left" Margin="388,314,0,0" VerticalAlignment="Top" Width="210" Height="67"  FontSize="24" FontWeight="Bold" Click="BtnMovieShow_Click" />
+        <DatePicker x:Name="dtTime" HorizontalAlignment="Left" Margin="223,216,0,0" VerticalAlignment="Top" Width="375" Height="41"/>
+        <TextBox x:Name="timeAmPmClock" HorizontalAlignment="Left" Height="37" Margin="223,272,0,0" TextWrapping="Wrap" Text="2:00 AM" VerticalAlignment="Top" Width="375" RenderTransformOrigin="0.08,0.457" TextChanged="TimeAmPmClock_TextChanged"/>
+
+
     </Grid>
 </Window>

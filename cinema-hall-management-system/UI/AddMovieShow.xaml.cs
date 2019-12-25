@@ -22,6 +22,50 @@ namespace cinema_hall_management_system.UI
         public AddMovieShow()
         {
             InitializeComponent();
+            
+        }
+
+        private void BtnMovieShow_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                string a = dtTime.SelectedDate.ToString();
+               
+                string b = timeAmPmClock.Text;
+                if (a == "") { throw new Exception("Time and Date can't be empty"); }
+                if (b == "") { throw new Exception("Time and Date can't be empty"); }
+                a = a.Remove(9);
+
+                DateTime dateTime = new DateTime();
+                dateTime =DateTime.Parse(a + " " + b);
+
+                new BL.MovieShow().addMovieShow(txtMovieID.Text, txtCinemHallId.Text, dateTime);
+
+
+
+            }
+
+            catch(Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+           
+        }
+
+        private void TxtMovieID_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TxtCinemHallId_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TimeAmPmClock_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

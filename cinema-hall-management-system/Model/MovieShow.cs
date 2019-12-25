@@ -20,7 +20,7 @@ namespace cinema_hall_management_system.Model
         {
             this.movieId = movieId;
             this.cinemahallId = cinemahallId;
-           
+            
             this.time = time;
         }
 

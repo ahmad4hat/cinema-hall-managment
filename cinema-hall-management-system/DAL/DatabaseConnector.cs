@@ -465,18 +465,50 @@ namespace cinema_hall_management_system.DAL
 
         }
 
+
+        public void addMovieShow(Models.MovieShow movieShow)
+        {
+
+            int capcity = findCinemaHall(movieShow.cinemahallId).capacity;
+
+            String query = 
+                "INSERT INTO `movie_show` (`id`, `id_movie`, `cinema_id`, `remaining_capacity`, `time`) VALUES (NULL, '"+movieShow.movieId+"', '"+movieShow.cinemahallId+"', '"+capcity+"', '"+movieShow.time+"')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
-
-
-
-   
-
-
-
-
-
 
 
 

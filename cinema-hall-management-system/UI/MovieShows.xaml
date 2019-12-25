@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cinema_hall_management_system.UI"
         mc:Ignorable="d"
-        Title="MovieShows" Height="450" Width="800">
+      Title="CinemaHalls" Height="1000" Width="1800">
     <Grid>
-        
+        <ListBox HorizontalAlignment="Left" Height="689" Margin="74,231,0,0" VerticalAlignment="Top" Width="1613">
+            <ListView Name="movieShowListList" Height="679" Width="1603" FontSize="24" >
+                <ListView.View >
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding id}" Width="80px" />
+                        <GridViewColumn Header="MOVIE ID" DisplayMemberBinding="{Binding movieId}" Width="250px"/>
+                        <GridViewColumn Header="CINEMA HALL ID" DisplayMemberBinding="{Binding cinemahallId}" Width="200px"/>
+                        <GridViewColumn Header="REMAINING CAPACITY" DisplayMemberBinding="{Binding remainingCapacity}" Width="350px"/>
+                        <GridViewColumn Header="TIME" DisplayMemberBinding="{Binding time}" Width="350px"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ListBox>
+        <Button x:Name="btnUpdate" Content="Refresh" HorizontalAlignment="Left" Margin="1414,77,0,0" VerticalAlignment="Top" Width="185" Height="104" FontSize="48" Click="BtnRefresh_Click" FontWeight="Bold"/>
+        <Button x:Name="btnAddMovieShows" Content="Add MovieShows" HorizontalAlignment="Left" Margin="120,86,0,0" VerticalAlignment="Top" Width="309" Height="86" FontSize="36" FontWeight="Bold" Click="BtnAddMovieShows_Click" />
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="1134,77,0,0" VerticalAlignment="Top" Width="219" Height="104" FontSize="48" FontWeight="Bold" Click="BtnDelete_Click"/>
+        <Button x:Name="btnUpdated" Content="Update" HorizontalAlignment="Left" Margin="854,77,0,0" VerticalAlignment="Top" Width="243" Height="104" FontSize="48" FontWeight="Bold" Click="BtnUpdated_Click"/>
     </Grid>
 </Window>

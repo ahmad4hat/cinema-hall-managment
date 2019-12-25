@@ -42,7 +42,7 @@ namespace cinema_hall_management_system.UI
 
         private void showButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("show Button");
+            new MovieShows().Show();
         }
     }
 }

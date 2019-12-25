@@ -22,6 +22,44 @@ namespace cinema_hall_management_system.UI
         public MovieShows()
         {
             InitializeComponent();
+            try
+            {
+                movieShowListList.ItemsSource = new BL.MovieShow().GetMovieShows();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+
+            }
+           
+        }
+
+        private void BtnUpdated_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                movieShowListList.ItemsSource = new BL.MovieShow().GetMovieShows();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+
+            }
+        }
+
+        private void BtnAddMovieShows_Click(object sender, RoutedEventArgs e)
+        {
+            new AddMovieShow().Show();
         }
     }
 }
