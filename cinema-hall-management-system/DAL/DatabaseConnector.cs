@@ -637,8 +637,7 @@ namespace cinema_hall_management_system.DAL
             } else 
             {
                 remaingCapacity = (remaingCapacity - numberOfTicket);
-                String query = "UPDATE `movie_show` SET `remaining_capacity` = '"+remaingCapacity+"' WHERE `movie_show`.`id` = "+showId+" ;" +
-                    "INSERT INTO `ticket` (`id`, `movie_show_id`, `user_id`, `ticket_count`, `time_date`) VALUES (NULL, '"+showId+ "', (SELECT id from user where email='"+email+"'), '"+numberOfTicket+"', '"+DateTime.Now+"') ;";
+                String query = "UPDATE `movie_show` SET `remaining_capacity` = '" + remaingCapacity + "' WHERE `movie_show`.`id` = " + showId + " ;";
 
                 MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
                 MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
