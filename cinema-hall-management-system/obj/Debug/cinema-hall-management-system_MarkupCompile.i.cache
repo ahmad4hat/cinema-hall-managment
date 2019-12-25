@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\App.xaml
-17179229371
+18-1230785203
 
-33-272930906
+34-257124191
 141586096460
-MainWindow.xaml;UI\AddCinemaHall.xaml;UI\AddMovie.xaml;UI\CinemaHallFindbyIdAndUpdate.xaml;UI\CinemaHalls.xaml;UI\EmployeeHome.xaml;UI\EmployeeLogin.xaml;UI\EmployeeResgister.xaml;UI\MovieFindbyIdAndUpdate.xaml;UI\Movies.xaml;UI\MovieShows.xaml;UI\RemoveCinemahall.xaml;UI\RemoveMovie.xaml;UI\UpdateCinemaHall.xaml;UI\UpdateMovie.xaml;UI\UserLogin.xaml;UI\UserResgister.xaml;
+MainWindow.xaml;UI\AddCinemaHall.xaml;UI\AddMovie.xaml;UI\AddMovieShow.xaml;UI\CinemaHallFindbyIdAndUpdate.xaml;UI\CinemaHalls.xaml;UI\EmployeeHome.xaml;UI\EmployeeLogin.xaml;UI\EmployeeResgister.xaml;UI\MovieFindbyIdAndUpdate.xaml;UI\Movies.xaml;UI\MovieShows.xaml;UI\RemoveCinemahall.xaml;UI\RemoveMovie.xaml;UI\UpdateCinemaHall.xaml;UI\UpdateMovie.xaml;UI\UserLogin.xaml;UI\UserResgister.xaml;
 
 True
 
