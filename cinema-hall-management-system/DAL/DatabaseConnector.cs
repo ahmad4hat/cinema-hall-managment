@@ -511,6 +511,71 @@ namespace cinema_hall_management_system.DAL
 
         }
 
+        public Model.MovieShow findMovieShow(int id)
+        {
+            String query = "SELECT * FROM `movie_show` WHERE id = " + id;
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+                if (myReader.HasRows)
+                {
+                    if (myReader.Read())
+                    {
+                        Console.WriteLine("found");
+
+                        Models.MovieShow movieShow = new Models.MovieShow(
+                            int.Parse(myReader[0].ToString()),
+                            int.Parse(myReader[1].ToString()),
+                            int.Parse(myReader[2].ToString()),
+                            int.Parse(myReader[3].ToString()),
+                            DateTime.Parse((myReader[4].ToString()))
+                            );
+
+                        return movieShow;
+                        
+                    }
+
+                    throw new Exception("Reader can't read");
+
+
+                }
+                else
+                {
+                    throw new Exception("CinemaHall not found ");
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+
+        public void updateMovieShow(Models.MovieShow movieShow)
+        {
+            String query = "UPDATE `movie_show` SET `id_movie` = '"+movieShow.movieId+ "',`cinema_id` = '"+movieShow.cinemahallId+"' , `remaining_capacity` = '" + movieShow.remainingCapacity+"', `time` = '"+movieShow.time+"' WHERE `movie_show`.`id` = "+movieShow.id+"";
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
 
 
 
