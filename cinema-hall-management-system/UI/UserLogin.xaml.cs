@@ -32,7 +32,8 @@ namespace cinema_hall_management_system.UI
             DatabaseConnector dal = new DatabaseConnector();
             if (dal.userLoginTest(emailTextBox.Text, b))
             {
-                MessageBox.Show("Login successful");
+                new TicketUserHome(emailTextBox.Text).Show();
+                this.Close();
                 
             }
             else

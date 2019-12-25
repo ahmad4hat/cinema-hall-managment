@@ -60,10 +60,12 @@
     <Compile Include="BL\Employee.cs" />
     <Compile Include="BL\Movie.cs" />
     <Compile Include="BL\MovieShow.cs" />
+    <Compile Include="BL\Tickets.cs" />
     <Compile Include="BL\User.cs" />
     <Compile Include="DAL\DatabaseConnector.cs" />
     <Compile Include="Model\CinemaHall.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\HelperModelForTicket.cs" />
     <Compile Include="Model\Movie.cs" />
     <Compile Include="Model\MovieShow.cs" />
     <Compile Include="Model\User.cs" />
@@ -75,6 +77,9 @@
     </Compile>
     <Compile Include="UI\AddMovieShow.xaml.cs">
       <DependentUpon>AddMovieShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BuyTicket.xaml.cs">
+      <DependentUpon>BuyTicket.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\CinemaHallFindbyIdAndUpdate.xaml.cs">
       <DependentUpon>CinemaHallFindbyIdAndUpdate.xaml</DependentUpon>
@@ -112,6 +117,9 @@
     <Compile Include="UI\RemoveMovieShow.xaml.cs">
       <DependentUpon>RemoveMovieShow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\TicketUserHome.xaml.cs">
+      <DependentUpon>TicketUserHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\UpdateCinemaHall.xaml.cs">
       <DependentUpon>UpdateCinemaHall.xaml</DependentUpon>
     </Compile>
@@ -148,6 +156,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\AddMovieShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\BuyTicket.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -196,6 +208,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\RemoveMovieShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\TicketUserHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

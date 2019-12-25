@@ -1,0 +1,28 @@
+﻿<Window x:Class="cinema_hall_management_system.UI.TicketUserHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cinema_hall_management_system.UI"
+        mc:Ignorable="d"
+        Title="Movies" Height="1000" Width="1800">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Height="689" Margin="74,231,0,0" VerticalAlignment="Top" Width="1613">
+            <ListView Name="ticketList" Height="679" Width="1603" FontSize="24" >
+                <ListView.View >
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding id}" Width="80px" />
+                        <GridViewColumn Header="Movie Name" DisplayMemberBinding="{Binding title}" Width="250px"/>
+                        <GridViewColumn Header="CinemaHall" DisplayMemberBinding="{Binding name}" Width="228px"/>
+                        <GridViewColumn Header="Showtime" DisplayMemberBinding="{Binding time}" Width="350px"/>
+                        <GridViewColumn Header="Remaining seats" DisplayMemberBinding="{Binding remaingCapacity}" Width="380px"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ListBox>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="83" Margin="74,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Width="988" TextChanged="TxtSearch_TextChanged" />
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="1118,71,0,0" VerticalAlignment="Top" Width="179" FontWeight="Bold" FontSize="36" Height="83" Click="BtnSearch_Click"/>
+        <Button x:Name="btnBuy" Content="Buy Ticket" HorizontalAlignment="Left" Margin="1404,71,0,0" VerticalAlignment="Top" Width="197"  FontWeight="Bold" FontSize="36" Height="83" Click="BtnBuy_Click" />
+
+    </Grid>
+</Window>

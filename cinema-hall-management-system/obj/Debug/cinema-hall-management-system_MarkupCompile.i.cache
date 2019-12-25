@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\App.xaml
-21-1209529197
+23-1478261092
 
-37145961077
+41145833952
 141586096460
-MainWindow.xaml;UI\AddCinemaHall.xaml;UI\AddMovie.xaml;UI\AddMovieShow.xaml;UI\CinemaHallFindbyIdAndUpdate.xaml;UI\CinemaHalls.xaml;UI\EmployeeHome.xaml;UI\EmployeeLogin.xaml;UI\EmployeeResgister.xaml;UI\MovieFindbyIdAndUpdate.xaml;UI\Movies.xaml;UI\MovieShowFindByIdAndUpdate.xaml;UI\MovieShows.xaml;UI\RemoveCinemahall.xaml;UI\RemoveMovie.xaml;UI\RemoveMovieShow.xaml;UI\UpdateCinemaHall.xaml;UI\UpdateMovie.xaml;UI\UpdateMovieShow.xaml;UI\UserLogin.xaml;UI\UserResgister.xaml;
+MainWindow.xaml;UI\AddCinemaHall.xaml;UI\AddMovie.xaml;UI\AddMovieShow.xaml;UI\BuyTicket.xaml;UI\CinemaHallFindbyIdAndUpdate.xaml;UI\CinemaHalls.xaml;UI\EmployeeHome.xaml;UI\EmployeeLogin.xaml;UI\EmployeeResgister.xaml;UI\MovieFindbyIdAndUpdate.xaml;UI\Movies.xaml;UI\MovieShowFindByIdAndUpdate.xaml;UI\MovieShows.xaml;UI\RemoveCinemahall.xaml;UI\RemoveMovie.xaml;UI\RemoveMovieShow.xaml;UI\TicketUserHome.xaml;UI\UpdateCinemaHall.xaml;UI\UpdateMovie.xaml;UI\UpdateMovieShow.xaml;UI\UserLogin.xaml;UI\UserResgister.xaml;
 
 True
 

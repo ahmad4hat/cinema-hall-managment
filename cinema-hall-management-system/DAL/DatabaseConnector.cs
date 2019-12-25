@@ -577,6 +577,86 @@ namespace cinema_hall_management_system.DAL
         }
 
 
+        public List<Model.HelperModelForTicket> showTicEverything(String search)
+        {
+
+            String query = "SELECT movie_show.id,movie.title,cinema_hall.name,movie_show.time,movie_show.remaining_capacity FROM movie_show join" +
+                " movie join cinema_hall WHERE movie_show.id_movie=movie.id and movie_show.cinema_id=cinema_hall.id and concat(movie.title,movie_show.time)" +
+                " LIKE '%"+search+"%'";
+
+            List<Model.HelperModelForTicket> helpers = new List<Models.HelperModelForTicket>() ;
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+                if (myReader.HasRows)
+                {
+                    while (myReader.Read())
+                    {
+                        Model.HelperModelForTicket h = new Models.HelperModelForTicket();
+                        h.id = int.Parse(myReader[0].ToString());
+                        h.title = myReader[1].ToString();
+                        h.name = myReader[2].ToString();
+                        h.time = myReader[3].ToString();
+                        h.remaingCapacity= int.Parse(myReader[4].ToString());
+                        helpers.Add(h);
+                    }
+
+                    return helpers;
+
+                   
+
+
+                }
+                return helpers;
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+
+
+        }
+
+        // public void 
+
+        public void buyTicket(String email, int showId,int numberOfTicket)
+        {
+            int remaingCapacity = findMovieShow(showId).remainingCapacity;
+            if ((remaingCapacity - numberOfTicket) < 0)
+            {
+                throw new Exception("Number of ticker is larger than the capacity");
+
+            } else 
+            {
+                remaingCapacity = (remaingCapacity - numberOfTicket);
+                String query = "UPDATE `movie_show` SET `remaining_capacity` = '"+remaingCapacity+"' WHERE `movie_show`.`id` = "+showId+" ;" +
+                    "INSERT INTO `ticket` (`id`, `movie_show_id`, `user_id`, `ticket_count`, `time_date`) VALUES (NULL, '"+showId+ "', (SELECT id from user where email='"+email+"'), '"+numberOfTicket+"', '"+DateTime.Now+"') ;";
+
+                MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+                MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+                comandDatabase.CommandTimeout = 60;
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlDataReader myReader = comandDatabase.ExecuteReader();
+
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+            }
+        }
+
+
 
 
 

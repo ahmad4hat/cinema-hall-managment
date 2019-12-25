@@ -60,7 +60,7 @@ namespace cinema_hall_management_system.UI
 
         private void txtTitle_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void txtDescription_TextChanged(object sender, TextChangedEventArgs e)
