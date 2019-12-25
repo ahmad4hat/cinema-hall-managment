@@ -75,5 +75,60 @@ namespace cinema_hall_management_system.BL
         }
 
 
+        public void updateMovieShow(String id, String movieId, String cinemahallId, String remainingCapacity, DateTime time)
+        {
+            if (movieId == "") { throw new Exception("movie id can't be empty"); }
+            if (cinemahallId == "") { throw new Exception("cinemallID id can't be empty"); }
+
+            int mid;
+            int cid;
+            int capacity;
+            if (!int.TryParse(movieId, out mid))
+            {
+                throw new Exception("Movie ID must be a number");
+            }
+
+            if (!int.TryParse(cinemahallId, out cid))
+            {
+                throw new Exception("CinemaHall ID must be a number");
+            }
+
+            if (!int.TryParse(remainingCapacity, out capacity))
+            {
+                throw new Exception("CinemaHall ID must be a number");
+            }
+
+            try
+            {
+                dbC.updateMovieShow(new Model.MovieShow(int.Parse(id) , mid, cid, capacity, time));
+            }catch(Exception err)
+            {
+                throw err;
+            }
+
+
+        }
+
+        public Model.MovieShow findMovieShow(String id)
+        {
+            if (id == "") { throw new Exception("id can't be empty "); }
+
+            int idInt;
+            if (!int.TryParse(id, out idInt))
+            {
+                throw new Exception("ID must be a number");
+            }
+
+            try
+            {
+                return dbC.findMovieShow(idInt);
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+        }
+
+
     }
 }

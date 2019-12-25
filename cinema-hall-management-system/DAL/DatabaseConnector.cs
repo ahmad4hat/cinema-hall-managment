@@ -316,7 +316,7 @@ namespace cinema_hall_management_system.DAL
         public  void addCinemaHall(Models.CinemaHall cinemaHall)
         {
 
-            String query = "INSERT INTO `cinema_hall` (`id`, `name`, `capacity`, `location`) VALUES (NULL, '"+cinemaHall.name+"', '"+cinemaHall.capacity+"', '"+cinemaHall.capacity+"')";
+            String query = "INSERT INTO `cinema_hall` (`id`, `name`, `capacity`, `location`) VALUES (NULL, '"+cinemaHall.name+"', '"+cinemaHall.capacity+"', '"+cinemaHall.location+"')";
 
             MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
             MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);

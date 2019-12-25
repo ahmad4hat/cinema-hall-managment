@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cinema_hall_management_system.UI"
         mc:Ignorable="d"
-        Title="MovieShowFindByIdAndUpdate" Height="450" Width="800">
+    Title="Find By ID and Update" Height="340.443" Width="512.978">
     <Grid>
-        
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="50" Margin="46,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="429" FontSize="36" FontWeight="Bold" TextChanged="TxtId_TextChanged"/>
+        <Button x:Name="btnUpdate" Content="Find by id and update" HorizontalAlignment="Left" Margin="46,182,0,0" VerticalAlignment="Top" Width="429" Height="75" FontSize="36" FontWeight="Bold" Click="BtnUpdate_Click"/>
+        <Label Content="Enter the MovieShow ID you want  to update" HorizontalAlignment="Left" Margin="46,41,0,0" VerticalAlignment="Top" Width="429" FontWeight="Bold" FontSize="20" Height="44"/>
     </Grid>
 </Window>

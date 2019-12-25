@@ -36,7 +36,7 @@ namespace cinema_hall_management_system.UI
 
         private void BtnUpdated_Click(object sender, RoutedEventArgs e)
         {
-
+           new MovieShowFindByIdAndUpdate().Show();
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
