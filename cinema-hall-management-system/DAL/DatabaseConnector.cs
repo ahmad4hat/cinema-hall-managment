@@ -411,13 +411,74 @@ namespace cinema_hall_management_system.DAL
             }
         }
 
+        
+        // Movie Shows 
+        //
+        //
+        //
+        //
+
+        public List<Model.MovieShow> GetMovieShows()
+        {
+            List<Models.MovieShow> movieShows = new List<Models.MovieShow>();
+
+            String query = "SELECT * FROM `movie_show`";
+
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
+                if (myReader.HasRows)
+                {
+                    while (myReader.Read())
+                    {
+                        Models.MovieShow movieShow = new Models.MovieShow(
+                            int.Parse(myReader[0].ToString()),
+                            int.Parse(myReader[1].ToString()),
+                            int.Parse(myReader[2].ToString()),
+                            int.Parse(myReader[3].ToString()),
+                            DateTime.Parse((myReader[4].ToString()))
+                            );
+
+                        movieShow.toString();
+                        movieShows.Add(movieShow);
+                    }
+
+                    return movieShows;
+                }
+                else
+                {
+                    return movieShows;
+
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+
+        }
+
     }
 
 
 
-    
+
+
+   
 
 
 
-    
+
+
+
+
+
+
 }
