@@ -51,5 +51,29 @@ namespace cinema_hall_management_system.BL
                 throw err;
             }
         }
+
+        public void removeMovieShow(String id)
+        {
+            if (id == "") { throw new Exception("id can't be empty "); }
+
+            int idInt;
+            if (!int.TryParse(id, out idInt))
+            {
+                throw new Exception("ID must be a number");
+            }
+
+
+
+            try
+            {
+                dbC.removeMovieShow(idInt);
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+        }
+
+
     }
 }

@@ -200,3 +200,5 @@ C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\D
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\MovieShows.baml
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\AddMovieShow.g.cs
 C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\AddMovieShow.baml
+C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\RemoveMovieShow.g.cs
+C:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\obj\Debug\UI\RemoveMovieShow.baml

@@ -492,7 +492,24 @@ namespace cinema_hall_management_system.DAL
 
 
 
+        public void removeMovieShow(int id)
+        {
+            String query = "DELETE FROM `movie_show` WHERE `movie_show`.`id` ="+id;
+            MySqlConnection databaseConnection = new MySqlConnection(MysqlConnetionString);
+            MySqlCommand comandDatabase = new MySqlCommand(query, databaseConnection);
+            comandDatabase.CommandTimeout = 60;
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = comandDatabase.ExecuteReader();
 
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
 
 
 
