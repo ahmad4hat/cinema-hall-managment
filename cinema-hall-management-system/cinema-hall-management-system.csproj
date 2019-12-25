@@ -73,6 +73,9 @@
     <Compile Include="UI\AddMovie.xaml.cs">
       <DependentUpon>AddMovie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\AddMovieShow.xaml.cs">
+      <DependentUpon>AddMovieShow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\CinemaHallFindbyIdAndUpdate.xaml.cs">
       <DependentUpon>CinemaHallFindbyIdAndUpdate.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\AddMovie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\AddMovieShow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
