@@ -1,8 +1,24 @@
 ﻿
-
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\App.xaml;;
 FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\MainWindow.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\AddCinemaHall.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\AddMovieShow.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\BuyTicket.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\CinemaHallFindbyIdAndUpdate.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\CinemaHalls.xaml;;
 FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\EmployeeLogin.xaml;;
 FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\EmployeeResgister.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\MovieFindbyIdAndUpdate.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\Movies.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\MovieShowFindByIdAndUpdate.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\MovieShows.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\RemoveCinemahall.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\RemoveMovie.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\RemoveMovieShow.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\TicketUserHome.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\UpdateCinemaHall.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\UpdateMovie.xaml;;
+FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\UpdateMovieShow.xaml;;
 FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\UserLogin.xaml;;
 FC:\Users\ahmad\Desktop\cinema-hall-managment\cinema-hall-management-system\UI\UserResgister.xaml;;
 

@@ -1,0 +1,7 @@
+
+
+1. open a database called "cinema_hall_management"
+2.write all the querys from database schema in the database - (the highest number)
+3. if the datasebase's port number is different than than '3306' , you can edit the MysqlConnetionString in DAL/DatabaseConnector
+4 . open Visual stadio and run  
+5. to run the production version go to bin /release 
